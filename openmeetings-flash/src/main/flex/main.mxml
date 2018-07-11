@@ -395,18 +395,18 @@
 		private function vidResize(_width:int, _height:int):void {
 			debug("vidResize", _width, _height);
 			var w:Number = _width, h:Number = _height;
-			if (!muted) {
-				var ratio:Number = params.width / params.height;
-				var nh:int = Math.ceil(_width / ratio);
-				if (nh > _height) {
-					w = Math.ceil(ratio * _height);
-					h = _height;
-				} else {
-					w = _width;
-					h = nh;
-				}
-				debug("vidResize:: " + _width + "x" + _height + "->" + w + "x" + h);
-			}
+//			if (!muted) {
+//				var ratio:Number = params.width / params.height;
+//				var nh:int = Math.ceil(_width / ratio);
+//				if (nh > _height) {
+//					w = Math.ceil(ratio * _height);
+//					h = _height;
+//				} else {
+//					w = _width;
+//					h = nh;
+//				}
+//				debug("vidResize:: " + _width + "x" + _height + "->" + w + "x" + h);
+//			}
 			_resize(w, h);
 			video.vidResize(w, h);
 		}
