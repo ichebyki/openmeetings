@@ -25,9 +25,9 @@ var Video = (function() {
 		const h = _h - _getExtra();
 		_resize(_w, h);
 		if (Room.getOptions().interview) {
-			v.dialog('widget').css(VideoUtil.getPos());
-			_vidResize(_w, h);
-		}
+            v.dialog('widget').css(VideoUtil.getPos());
+        }
+        _vidResize(_w, h);
 	}
 	function _resizePod() {
 		const p = v.parents('.pod,.pod-big')
